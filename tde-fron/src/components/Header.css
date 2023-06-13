@@ -3,8 +3,10 @@
     background-color: #026466;
     height: 100px;
     max-width: none;
-    font-size: 30px;
-    text-align: left;
-    color: aliceblue;
     padding: 12px;
+}
+.texto {
+    color: white;
+    font-size: 30px;
+    display: left;
 }
