@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import'./components/Header.css';
 import UserInfo from './components/UserInfo';
+import Order from './components/Order';
 
-const list = ['Teste nome',"10/10/10","teste@teste.com"];
 
 const list1 = [
   {
@@ -25,11 +25,11 @@ const list1 = [
 function App() {
   return (
     <div className="App">
-      <div className="App-header">
+      <div className="App-header">    
       </div> 
-        <div className='print'>
-          <UserInfo items={list1}/>
-        </div>
+      <div className='print'>
+          <Order/>
+      </div>
       </div>
   );
 }
