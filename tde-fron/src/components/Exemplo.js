@@ -1,13 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { ReactDOM } from "react";
 
 const Exemplo = () => {
+    const [name,SetName] = useState("");
+
+    const handleSubmit = (event) =>{
+      event.preventDefault();
+      alert(`Foi enviado ${name}`)
+    }
     return (
-        <div>
+        <form onSubmit={handleSubmit}>
       <label>Enter your name:
-        <input type="text" />
+        <input 
+        type="text" 
+        value={name}
+        onChange={(e)=> SetName(e.target.value)}
+        />
       </label>
-    </div>
+      <input type="submit"/>
+      <h4>{name}</h4>
+    </form>
     );
 }
 

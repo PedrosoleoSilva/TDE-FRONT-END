@@ -2,6 +2,7 @@ import { useState } from 'react';
 import'./components/Header.css';
 import UserInfo from './components/UserInfo';
 import Order from './components/Order';
+import Exemplo from './components/Exemplo';
 
 
 const list1 = [
@@ -29,6 +30,7 @@ function App() {
       </div> 
       <div className='print'>
           <Order/>
+          <Exemplo/>
       </div>
       </div>
   );
