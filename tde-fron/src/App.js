@@ -3,6 +3,7 @@ import'./components/Header.css';
 import UserInfo from './components/UserInfo';
 import Order from './components/Order';
 import Exemplo from './components/Exemplo';
+import UserList from './page/UserList';
 
 
 const list1 = [
@@ -25,14 +26,7 @@ const list1 = [
 
 function App() {
   return (
-    <div className="App">
-      <div className="App-header">    
-      </div> 
-      <div className='print'>
-          <Order/>
-          <Exemplo/>
-      </div>
-      </div>
+   <UserList/>
   );
 }
 
